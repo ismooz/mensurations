@@ -59,12 +59,16 @@ if ($format === 'json') {
         
         $value = number_format($row['value'], 2, ',', '') . ' ' . $unit;
         
+        // Sanitize notes to avoid CSV injection and malformed lines
+        $notes = str_replace(["\r", "\n"], ' ', $row['notes']);
+        $notes = htmlspecialchars($notes, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
         fputcsv($output, [
             $date,
             $time,
             $row['measurement_type'],
             $value,
-            $row['notes']
+            $notes
         ], ';');
     }
     
