@@ -3,7 +3,7 @@
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'u961135604_fatsi');
 define('DB_USER', 'u961135604_5Q0om');
-define('DB_PASS', 'Ism@eL*_*1983'); // Remplacez par votre mot de passe
+define('DB_PASS', 'YOUR PASSWORD'); // Remplacez par votre mot de passe
 
 // Connexion à la base de données
 try {
