@@ -34,7 +34,7 @@ document.querySelectorAll('.nav-tab').forEach(tab => {
         if (currentTab === 'measurements' || currentTab === 'body-comp') {
             loadMeasurementsList();
         } else if (currentTab === 'dashboard') {
-            // Redessiner le graphique du// Variables globales
+            // Redessiner le graphique du poids quand on revient au dashboard.
 let currentPeriod = 'all';
 let currentTab = 'dashboard';
 let currentMeasurementType = null;
