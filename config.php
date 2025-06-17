@@ -1,8 +1,8 @@
 <?php
 // Configuration de la base de données
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'u961135604_fatsi');
-define('DB_USER', 'u961135604_5Q0om');
+define('DB_HOST', 'your_db_host');
+define('DB_NAME', 'your_db_name');
+define('DB_USER', 'your_db_user');
 define('DB_PASS', 'YOUR PASSWORD'); // Remplacez par votre mot de passe
 
 // Connexion à la base de données
