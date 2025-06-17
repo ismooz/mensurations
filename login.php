@@ -20,6 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $username;
         
+        // CORRECTION : Vérifie si l'utilisateur est 'admin' et définit la session
+        if ($username === 'admin') {
+            $_SESSION['is_admin'] = true;
+        }
+        
         if (isset($_POST['ajax'])) {
             header('Content-Type: application/json');
             echo json_encode(['success' => true]);
